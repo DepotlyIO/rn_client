@@ -1,1 +1,1 @@
-DEPOTLY inqlude Requst Netvork test https://rn-client.depotly.dev
+DEPOTLY inqlude Requst Network test https://rn-client.depotly.dev
