@@ -29,3 +29,15 @@ DEPOTLY inqlude Requst Network [testnet](https://rn-client.depotly.dev)
 -Cryptocurrency (USDT, ETH, etc.)
 -Payment frequency (monthly, weekly, per project, etc.)
 -Contract conditions (e.g., project milestones)
+
+## License
+
+This project is licensed under the GNU General Public License version 3.0 (GPL v3.0).
+
+### Key Points of GPL v3.0:
+- **Freedom to Use**: You can use the software for any purpose.
+- **Freedom to Study and Modify**: The source code is available, and you can study and modify it.
+- **Freedom to Distribute Copies**: You can distribute copies of the software, both in its original and modified forms.
+- **Freedom to Distribute Modified Versions**: You can distribute modified versions of the software, provided they are also licensed under GPL v3.0.
+
+The full text of the license can be found [here](https://www.gnu.org/licenses/gpl-3.0.en.html).
