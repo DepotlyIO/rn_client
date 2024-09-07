@@ -3,8 +3,8 @@ DEPOTLY inqlude Requst Network [testnet](https://rn-client.depotly.dev)
 1. Dashboard
 - Description: This is the main page that provides a summary of upcoming payments to freelancers, the status of previous payments, pending payments, and the company’s total expenditure on services.
 - Interface Elements:
-- *General Statistics:
-- **Total payments for the current month
+-- General Statistics:
+--- Total payments for the current month
 - **Number of freelancers awaiting payment
 - **Number of successfully completed payments
 - **Amount of cryptocurrency available for payments (e.g., in USDT, ETH, etc.)
