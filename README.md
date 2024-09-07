@@ -1,34 +1,108 @@
 DEPOTLY inqlude Requst Network [testnet](https://rn-client.depotly.dev)
 ## Interface Architecture for Managing Regular Crypto Payments to Freelancers
-1. Dashboard
-- Description: This is the main page that provides a summary of upcoming payments to freelancers, the status of previous payments, pending payments, and the company’s total expenditure on services.
+#### 1. Dashboard
+- Description: This is the main page that provides a summary of upcoming payments to freelancers, the status of previous payments, pending payments, and the company’s total expenditure on services. 
 - Interface Elements:
--- General Statistics:
---- Total payments for the current month
-- **Number of freelancers awaiting payment
-- **Number of successfully completed payments
-- **Amount of cryptocurrency available for payments (e.g., in USDT, ETH, etc.)
-- **Number of pending payments: The number of payments that need to be made soon, with the amount and deadlines specified.
-- *Charts and Graphs:
-- **“Monthly Payments” chart (comparison of amounts in various cryptocurrencies, number of paid freelancers)
-- “Payment Status” chart (percentage of completed and pending payments)
-- *Upcoming Payments:
-- **List of freelancers who need to be paid soon, with the date of the next payment and the amount specified.
-- *Notifications and Alerts:
-- **Notifications about overdue payments that were not made on time.
-- **Notifications about errors when sending funds (e.g., insufficient funds in the wallet or network failures).
-- **Reminders to top up the cryptocurrency wallet before making the next payments.
-2. Contract Creation and Management Page
+  - General Statistics:
+    - Total payments for the current month
+    - Number of freelancers awaiting payment
+    - Number of successfully completed payments
+    - Amount of cryptocurrency available for payments (e.g., in USDT, ETH, etc.)
+    - Number of pending payments: The number of payments that need to be made soon, with the amount and deadlines specified.
+  - Charts and Graphs:
+    - “Monthly Payments” chart (comparison of amounts in various cryptocurrencies, number of paid freelancers)
+    - “Payment Status” chart (percentage of completed and pending payments)
+  - Upcoming Payments:
+    - List of freelancers who need to be paid soon, with the date of the next payment and the amount specified.
+  - Notifications and Alerts:
+    - Notifications about overdue payments that were not made on time.
+    - Notifications about errors when sending funds (e.g., insufficient funds in the wallet or network failures).
+    - Reminders to top up the cryptocurrency wallet before making the next payments.
+#### 2. Contract Creation and Management Page
 - Description: A page where companies can create contracts for freelancers, setting payment parameters (amount, frequency, cryptocurrency, and conditions), as well as manage them.
 - Interface Elements:
-- *Contract Creation Form:
-- **Input fields:
-- ***Freelancer’s name
-- ***Email or cryptocurrency wallet address of the freelancer
-- ***Payment amount
-- ***Cryptocurrency (USDT, ETH, etc.)
-- ***Payment frequency (monthly, weekly, per project, etc.)
-- ***Contract conditions (e.g., project milestones)
+  - Contract Creation Form:
+    - Input fields:
+      - Freelancer’s name
+      - Email or cryptocurrency wallet address of the freelancer
+      - Payment amount
+      - Cryptocurrency (USDT, ETH, etc.)
+      - Payment frequency (monthly, weekly, per project, etc.)
+      - Contract conditions (e.g., project milestones)
+      - Payment start date
+      - Number of stages or payment period
+    - Automation Settings:
+      - Ability to set up automatic recurring payments under the contract.
+      - Notification settings for the company and the freelancer (e.g., notification 3 days before the payment date).
+    - Actions:
+      - Buttons to edit the contract, pause payments, or terminate the contract.
+#### 3. Payment Management
+- Description: A page where the company can track all current and past payments, manage payments for different freelancers and in different cryptocurrencies.
+- Interface Elements:
+  - Payment Table:
+    - Columns:
+      - Freelancer’s name
+      - Cryptocurrency wallet address
+      - Payment amount
+      - Cryptocurrency
+      - Payment status (paid, in process, overdue, pending)
+      - Date of last payment
+      - Date of next payment
+    - Filters and Sorting:
+      - Filter by status (pending, paid, overdue).
+      - Sort by freelancer, date, or cryptocurrency.
+    - Actions:
+      - Manual payment (e.g., if the automatic payment failed).
+      - Sending a reminder to the freelancer about the upcoming payment or a request for confirmation of work completion.
+      - Viewing the history of all transactions with the freelancer.
+      - Insufficient funds notifications: If there are not enough funds in the cryptocurrency wallet to make upcoming payments, a warning is displayed with the option to top up the balance.
+#### 4. Freelancer Detail Page
+- Description: A separate page where you can see detailed information about a specific freelancer, including the history of all contracts, task completion status, and the history of all payments.
+- Interface Elements:
+    - Freelancer Information:
+      - Name, cryptocurrency wallet address, contact details.
+      - Current contracts, work status.
+    - Payment History:
+      - Detailed history of all transactions made for this freelancer.
+      - Date, amount, cryptocurrency, payment status (successful, overdue, pending, failed).
+    - Documents and Reports:
+      - Field for adding reports, documents, or invoices from the freelancer.
+      - Option to confirm work completion.
+#### 5. Integration with Wallets and Crypto Exchanges
+- Description: A page where the company can connect its cryptocurrency wallets and set up automatic payments.
+- Interface Elements:
+  - Wallet Connection:
+    - Ability to connect multiple wallets (e.g., Metamask, Trust Wallet).
+    - Default cryptocurrency selection for payments (USDT, DAI, ETH, etc.).
+  - Balance Top-Up:
+    - Wallet top-up function for payment automation.
+    - Notification of insufficient funds in the wallet for upcoming payments.
+  - Integration with Crypto Exchanges:
+    - Connecting API of crypto exchanges for fund replenishment and automation of fund withdrawal for freelancer payments.
+    - Low balance warning: If the wallet balance is too low to make all upcoming payments, the application will automatically notify the user and suggest topping up the balance.
+#### 6. Analytics and Forecasts
+- Description: A page with analytical data where companies can track expenses on freelancer payments, forecast future payments, and evaluate work efficiency.
+- Interface Elements:
+  - Expense Charts:
+    - Chart showing monthly or weekly expenses on freelancer payments in various cryptocurrencies.
+  - Future Expense Forecast:
+    - Forecasted expenses based on current contracts with freelancers.
+    - Cryptocurrency rate change assessment for more accurate budget planning.
+  - Payment Report:
+    - Generating a report on paid amounts for a selected period (broken down by freelancers or cryptocurrencies).
+  - Upcoming Payments Forecast:
+    - Budget modeling based on expected contracts and their frequency.
+#### 7. Company Profile and Settings
+- Description: A page where the company can set up its information, notification methods, and payment methods.
+- Interface Elements:
+  - Company Information:
+    - Company name,
+    - contact details,
+    - wallet addresses.
+  - Notification Settings: How the company wants to receive notifications (email, SMS, etc.) about payments, overdue payments, and insufficient funds in the wallet.
+  - Payment Settings: Selection of the primary cryptocurrency for payments, setting up automatic transactions, notification threshold for insufficient funds.
+
+
 
 ## License
 
