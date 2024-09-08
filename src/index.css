@@ -1,0 +1,124 @@
+/* src/index.css */
+
+/* Color palette */
+:root {
+  --primary-color: #26A688;
+  --secondary-color: #ddf8f2;
+  --accent-color: #b4eee0;
+  --background-color: #ffffff;
+  --dark-blue-color: #192248;
+  --text-color: #333f70;
+}
+
+/* Global styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* General button styles */
+button {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+}
+
+/* Card component */
+.card {
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  color: var(--dark-blue-color);
+  font-size: 20px;
+}
+
+.card p {
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+/* Table component */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th, table td {
+  border: 1px solid var(--accent-color);
+  padding: 12px;
+  text-align: left;
+}
+
+table th {
+  background-color: var(--dark-blue-color);
+  color: var(--background-color);
+}
+
+table tr:nth-child(even) {
+  background-color: var(--secondary-color);
+}
+
+/* Form styling */
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+}
+
+label {
+  color: var(--dark-blue-color);
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Notification component */
+.notification {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.notification.info {
+  background-color: var(--accent-color);
+  color: var(--dark-blue-color);
+}
+
+.notification.error {
+  background-color: #f44336;
+  color: #fff;
+}
