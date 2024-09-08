@@ -2,8 +2,8 @@
 - resources:
   - [SOURCE.md](https://github.com/DepotlyIO/rn_client/blob/main/SOURCE.md)
   - [testnet](https://rn-client.depotly.dev)
-  - [demo on youtube]
-  - [presentations]
+  - [demo on youtube](https://youtu.be/9M6ZxeOowHs)
+  - [presentations](https://github.com/DepotlyIO/rn_client/blob/master/Recurring-Payment-Automation-using-Request-Network.pptx)
   - [team](https://github.com/DepotlyIO/rn_client/edit/main/README.md#team)
   - [documentation](https://github.com/DepotlyIO/rn_client/edit/main/README.md#interface-architecture-for-managing-regular-crypto-payments-to-freelancers)
 
