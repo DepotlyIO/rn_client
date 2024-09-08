@@ -1,4 +1,8 @@
 DEPOTLY inqlude Requst Network [testnet](https://rn-client.depotly.dev)
+## Team
+- [@martastew](https://github.com/martastew) Maria Dovnar [marialtlife@gmail.com](mailto:marialtlife@gmail.com) [LinkedIn](https://www.linkedin.com/in/mariadovnar/)
+- [@setlol](https://github.com/dovnar) Maksim Dovnar [ceo@depotly.io](mailto:ceo@depotly.io) [LinkedIn](https://www.linkedin.com/in/getlol/)
+
 ## Interface Architecture for Managing Regular Crypto Payments to Freelancers
 #### 1. Dashboard
 - Description: This is the main page that provides a summary of upcoming payments to freelancers, the status of previous payments, pending payments, and the company’s total expenditure on services. 
